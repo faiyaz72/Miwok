@@ -28,7 +28,6 @@ public class WordAdapter extends ArrayAdapter<Miwok> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         View listitemView = convertView;
-
         if(listitemView == null) {
             listitemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
