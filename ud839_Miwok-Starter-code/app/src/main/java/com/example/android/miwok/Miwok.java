@@ -11,6 +11,8 @@ public class Miwok {
 
     private int imageResourceID;
 
+    private int audioRedource;
+
     public Miwok(String defaultTranslation, String miwokTranslation) {
         this.defaultTranslation = defaultTranslation;
         this.miwokTranslation = miwokTranslation;
@@ -20,6 +22,14 @@ public class Miwok {
         this.defaultTranslation = defaultTranslation;
         this.miwokTranslation = miwokTranslation;
         this.imageResourceID = imageResourceID;
+    }
+
+    public Miwok(String defaultTranslation, String miwokTranslation, int imageResourceID,
+                 int audioResource) {
+        this.defaultTranslation = defaultTranslation;
+        this.miwokTranslation = miwokTranslation;
+        this.imageResourceID = imageResourceID;
+        this.audioRedource = audioResource;
     }
 
     public String getDefaultTranslation() {
@@ -33,4 +43,6 @@ public class Miwok {
     public int getImageResourceID() {
         return imageResourceID;
     }
+
+    public int getAudioRedource() { return audioRedource;}
 }
